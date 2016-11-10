@@ -1,0 +1,24 @@
+= udi-05
+
+== Goals
+
+* Learn about recursion and complexity.
+
+== Tasks
+
+* link:assignment.adoc[Solve the assignments].
+** Commit early, commit often.
+** Backup your work! (`git push`).
+* Push and notify me that you're done.
+
+== Feedback
+
+If you have any feedback (negative or positive) just send me an email.
+
+== Notes
+
+* https://classroom.github.com/classrooms/22538385-gymy-16[Our classroom]
+* https://github.com/GYMY-16[Our organization]
+* https://git-scm.com/downloads[Git]
+* https://github.com/[GitHub]
+

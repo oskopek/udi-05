@@ -1,0 +1,48 @@
+= Assignment 05
+
+== Task -- Hanoi towers
+
+Write a function (preferrably in Python) with the following signature: `def hanoi(n, src, spare, dest)`.
+The function should write out the correct procedure for moving all `n` disks from `src` to `dest` using
+the `spare` peg for help. The parameters `src`, `dest` and `spare` are strings.
+
+* A larger disk cannot sit on a smaller one.
+* More info: https://en.wikipedia.org/wiki/Tower_of_Hanoi[wikipedia]
+
+You can use link:hanoi.py[this file] as a start.
+
+Hint: Use recursion.
+
+Hint2: To start, think of a simple case.
+
+Example: `hanoi(3, "A", "B", "C")` should print:
+
+```
+A->C
+A->B
+C->B
+A->C
+B->A
+B->C
+A->C
+```
+
+== Task -- Finally, something (almost) interesting
+
+Write a function (preferrably in Python) with the following signature: `def count(matrix, element)`.
+The function should return the number of times the `element` is found in the `matrix`.
+You can use link:count.py[this file] as a start.
+
+* Try TDD. Even if you don't do TDD, make sure you test afterwards!
+* `matrix` is a list of lists of integers (non-negative)
+** You can assume the input is sound, i.e. that it is non-`None`, that
+it always has an equal number of columns in every row. Note, the row count
+does not have to equal the column count.
+** It is strictly increasing in every column *and* row.
+
+Hints (`m = # of rows`, `n = # of columns`):
+
+* A trivial solution exists in `O(m*n)`... `~O(n^2)`
+* A slightly better solution can be done in `O(m*log(n))` or `O(n*log(m))`... `~O(n*log(n))`
+* The best I know of runs in `O(m+n)`... `~O(n)`
+
